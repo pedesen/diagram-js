@@ -2,6 +2,10 @@
  * outline styles
  */
 
+.canvas {
+  background-color: black;
+}
+
 .djs-outline {
   fill: none;
   visibility: hidden;
@@ -127,7 +131,7 @@ svg.drop-not-ok {
  * drag styles
  */
 .djs-dragger {
-  fill: white;
+  fill: none;
   fill-opacity: 0.6;
   stroke: #333;
 }
@@ -317,9 +321,11 @@ svg.drop-not-ok {
   vertical-align: top;
 }
 
+/*
 .djs-context-pad .entry:hover {
   background: rgb(255, 252, 176);
 }
+*/
 
 .djs-context-pad.open {
   display: block;
@@ -501,4 +507,51 @@ svg.drop-not-ok {
 
 .djs-tooltip-error:hover {
   opacity: 1;
+}
+
+
+.icon-monster {
+  background-image: url("../../resources/monster.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-riddle {
+  background-image: url("../../resources/riddle.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-story {
+  background-image: url("../../resources/story.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-swords {
+  background-image: url("../../resources/swords-icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-green-diamond {
+  background-image: url("../../resources/green-diamond-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-red-diamond {
+  background-image: url("../../resources/red-diamond-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.djs-context-pad .icon-red-diamond:before,
+.djs-context-pad .icon-monster:before,
+.djs-context-pad .icon-swords:before
+{
+  content: '';
 }
